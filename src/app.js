@@ -8,7 +8,10 @@ const { App } = require('jovo-framework');
 const { Alexa } = require('jovo-platform-alexa');
 const { GoogleAssistant } = require('jovo-platform-googleassistant');
 const { JovoDebugger } = require('jovo-plugin-debugger');
-const { FileDb } = require('jovo-db-filedb');
+const { MongoDb } = require('jovo-db-mongodb');
+const { AuthenticationPlugin,
+        ActionCorePlugin, actionCoreHandlers} = require('./plugins');
+const { googleClientId } = require('./cred');
 
 const app = new App();
 
@@ -16,9 +19,10 @@ app.use(
     new Alexa(),
     new GoogleAssistant(),
     new JovoDebugger(),
-    new FileDb()
+    new MongoDb(),
+    new AuthenticationPlugin(googleClientId),
+    new ActionCorePlugin()
 );
-
 
 // ------------------------------------------------------------------
 // APP LOGIC
@@ -37,5 +41,7 @@ app.setHandler({
         this.tell('Hey ' + this.$inputs.name.value + ', nice to meet you!');
     },
 });
+
+app.setGoogleAssistantHandler(actionCoreHandlers);
 
 module.exports.app = app;

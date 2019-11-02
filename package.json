@@ -4,7 +4,9 @@
   "description": "Voice App for InstaPool project at HackDuke",
   "main": "src/index.js",
   "dependencies": {
+    "google-auth-library": "latest",
     "jovo-db-filedb": "^2.0.2",
+    "jovo-db-mongodb": "^2.2.15",
     "jovo-framework": "^2.2.19",
     "jovo-platform-alexa": "^2.0.2",
     "jovo-platform-googleassistant": "^2.0.2",
