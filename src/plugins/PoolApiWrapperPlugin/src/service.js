@@ -38,8 +38,6 @@ class PoolApiWrapperService{
             body: body,
             json: true
         };
-        console.log(body.location);
-        console.log(body.destination);
 
         return request.post(options)
             .then(function (parsedBody) {
@@ -51,6 +49,25 @@ class PoolApiWrapperService{
 
             });
 
+    }
+
+    async checkRiderStatus(user){
+
+        const url = instaPoolApi + `/user/${user.$data.email}/ride/rider/matches`;
+        const options = {
+            uri: url,
+            json: true
+        };
+        let driversName = [];
+        const drivers = await request.get(options)
+        if(drivers.length < 0){
+            return
+        }
+        drivers.forEach(function(element) {
+            driversName.unshift(element.driver["first_name"])
+        });
+
+        return driversName;
     }
 
     async getLongLatByAddress(address){

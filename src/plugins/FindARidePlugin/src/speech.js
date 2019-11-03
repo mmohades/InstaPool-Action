@@ -12,5 +12,9 @@ module.exports = {
     askForNewLocationAndTimeReprompt: "When and where do you want to go today?",
 
     dateIsNotValid: "Sorry, but the date requested is past or is invalid. When and where do you want to go again?",
-    dateIsNotValidReprompt: "When and where are you carpooling to?"
+    dateIsNotValidReprompt: "When and where are you carpooling to?",
+
+    noDriversFound: "Sorry, I haven't found a driver for your trip. But don't worry! We'll find you one, and I'll keep you posted",
+    driverFound: "Great news! We have found you a driver! %s is willing to give you a ride. Check your app to see the fare and accept them.",
+    driversFound: "Great news! We have found %s drivers for you. %s are willing to give you a ride. Check your app to see their fares and accept them."
 };

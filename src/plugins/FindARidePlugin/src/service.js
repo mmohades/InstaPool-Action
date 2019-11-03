@@ -55,6 +55,20 @@ class FindARideService{
 
         return jovoInstance.tell(speech.placedRideRequest);
     }
+
+    async checkRideFound(jovoInstance){
+
+        const drivers = await jovoInstance.$app.$poolApiWrapperService.checkRiderStatus(jovoInstance.$user);
+        if(drivers.length < 1){
+            return jovoInstance.tell(speech.noDriversFound);
+        }
+        if(drivers.length === 1){
+            return jovoInstance.tell(parse(speech.driverFound, drivers[0]));
+        }
+
+        return jovoInstance.tell(parse(speech.driversFound, drivers.length, drivers.join((', '))));
+
+    }
 }
 
 module.exports.FindARideService = FindARideService;

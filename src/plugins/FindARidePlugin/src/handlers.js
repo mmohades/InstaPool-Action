@@ -19,7 +19,10 @@ module.exports = {
         async AskForRideIntent(){
             return this.toStatelessIntent('AskForRideIntent');
         }
-    }
+    },
 
+    async CheckRideStatusIntent(){
+        return this.$app.$findARideService.checkRideFound(this);
+    },
 
 };
