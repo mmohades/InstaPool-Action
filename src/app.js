@@ -10,7 +10,8 @@ const { GoogleAssistant } = require('jovo-platform-googleassistant');
 const { JovoDebugger } = require('jovo-plugin-debugger');
 const { MongoDb } = require('jovo-db-mongodb');
 const { AuthenticationPlugin,
-        ActionCorePlugin, actionCoreHandlers} = require('./plugins');
+        ActionCorePlugin, actionCoreHandlers,
+        FindARidePlugin, findARideHandlers }= require('./plugins');
 const { googleClientId } = require('./cred');
 
 const app = new App();
@@ -21,7 +22,8 @@ app.use(
     new JovoDebugger(),
     new MongoDb(),
     new AuthenticationPlugin(googleClientId),
-    new ActionCorePlugin()
+    new ActionCorePlugin(),
+    new FindARidePlugin()
 );
 
 // ------------------------------------------------------------------
@@ -42,6 +44,6 @@ app.setHandler({
     },
 });
 
-app.setGoogleAssistantHandler(actionCoreHandlers);
+app.setGoogleAssistantHandler(actionCoreHandlers, findARideHandlers);
 
 module.exports.app = app;
