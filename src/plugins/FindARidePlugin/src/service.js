@@ -14,31 +14,24 @@ class FindARideService{
         }
         const location = extractLocationEntity(jovoInstance.$inputs);
         const date = extractDateEntity(jovoInstance.$inputs);
-        const utcDate = moment.utc(date.valueOf());
 
         if(debug) {
-            console.log("Extracted time: ");
-            console.log(date);
             console.log("Extracted location:");
             console.log(location);
-            console.log(`Expected: ${date}, now date: ${new Date(Date.now())}, UTC converted: ${moment.utc(date.valueOf())}`)
+            console.log(`Expected: ${date.format('LLLL')}, now date: ${new Date(Date.now())}, UTC converted: ${moment.utc(date.valueOf())}, the differnece is ${(date.valueOf() - Date.now())}`)
         }
         if(location.type === "EMPTY"){
             return jovoInstance.ask(speech.locationNotFound, speech.locationNotFoundReprompt);
         }
 
-        if(date.valueOf() - Date.now() < 0 || !date.valid){
+        if(date - moment.now() < 0 ||  !date.isValid()){
             return jovoInstance.ask(speech.dateIsNotValid, speech.dateIsNotValidReprompt);
         }
 
-        const newRideRequest = new RideRequest(utcDate, null, location.data, false);
+        const newRideRequest = new RideRequest(date.utc(), null, location.data, false);
 
         newRideRequest.save(jovoInstance.$user);
-        const dateReadbleString = new moment(date.valueOf()).fromNow();
-
-        console.log("Testing moment");
-        console.log(dateReadbleString);
-        console.log("Testing moment");
+        const dateReadbleString = date.fromNow();
 
         return jovoInstance
             .followUpState("ConfirmRideRequestState")
@@ -57,6 +50,7 @@ class FindARideService{
             console.log("your ride request");
             console.log(rideRequest);
         }
+
         //TODO: Get the data from the DB and make calls to the API
         return jovoInstance.tell(speech.placedRideRequest);
     }

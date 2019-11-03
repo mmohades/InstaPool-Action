@@ -11,7 +11,8 @@ const { JovoDebugger } = require('jovo-plugin-debugger');
 const { MongoDb } = require('jovo-db-mongodb');
 const { AuthenticationPlugin,
         ActionCorePlugin, actionCoreHandlers,
-        FindARidePlugin, findARideHandlers }= require('./plugins');
+        FindARidePlugin, findARideHandlers,
+        PoolApiWrapperPlugin}= require('./plugins');
 const { googleClientId } = require('./cred');
 
 const app = new App();
@@ -23,7 +24,8 @@ app.use(
     new MongoDb(),
     new AuthenticationPlugin(googleClientId),
     new ActionCorePlugin(),
-    new FindARidePlugin()
+    new FindARidePlugin(),
+    new PoolApiWrapperPlugin()
 );
 
 // ------------------------------------------------------------------

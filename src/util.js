@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 function parse(str) {
     let args = [].slice.call(arguments, 1),
         i = 0;
@@ -32,16 +34,21 @@ function extractLocationEntity(inputs) {
  * @returns {*}
  */
 function extractDateEntity(inputs) {
-    return convert_string_to_date(inputs['date-time'].value.date_time)
+    date_time = inputs['date-time'];
+
+    if(date_time.value.date_time) {
+        return convert_string_to_date(inputs['date-time'].value.date_time);
+    }
+    return convert_string_to_date(date_time.value);
 }
 
 /**
  * Convert a date in string to date object
  * @param utc
- * @returns {Date}
+ * @returns {moment.Moment}
  */
 function convert_string_to_date(utc){
-    return new Date(Date.parse(utc));
+    return moment(utc);
 }
 
 module.exports = {
