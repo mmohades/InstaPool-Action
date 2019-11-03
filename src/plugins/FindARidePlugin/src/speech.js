@@ -9,6 +9,8 @@ module.exports = {
     placedRideRequest: "Awesome! I'm looking for drivers for you! I will send you a text when I find you one.",
 
     askForNewLocationAndTime: "Ok! Where and when do you want the carpool?",
-    askForNewLocationAndTimeReprompt: "When and where do you want to go today?"
+    askForNewLocationAndTimeReprompt: "When and where do you want to go today?",
 
+    dateIsNotValid: "Sorry, but the date requested is past or is invalid. When and where do you want to go again?",
+    dateIsNotValidReprompt: "When and where are you carpooling to?"
 };
