@@ -32,7 +32,7 @@ function extractLocationEntity(inputs) {
  * @returns {*}
  */
 function extractDateEntity(inputs) {
-    return convert_string_to_date(inputs.time.value)
+    return convert_string_to_date(inputs['date-time'].value.date_time)
 }
 
 /**
