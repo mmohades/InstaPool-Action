@@ -1,6 +1,7 @@
 const speech = require('./speech');
 const { parse, extractLocationEntity, extractDateEntity } = require('../../../util');
 const RideRequest = require('../../../../models/RideRequest');
+const moment = require('moment');
 const debug = true;
 
 
@@ -25,9 +26,15 @@ class FindARideService{
         }
 
         const newRideRequest = new RideRequest(date, null, location.data);
+        const dateReadbleString = new moment(date.valueOf()).fromNow();
+
+        console.log("Testing moment");
+        console.log(dateReadbleString);
+        console.log("Testing moment");
+
         return jovoInstance
             .followUpState("ConfirmRideRequestState")
-            .ask(parse(speech.confirmTimeAndLocation, location.data, date.toDateString()))
+            .ask(parse(speech.confirmTimeAndLocation, location.data, dateReadbleString))
     }
 
     async riderequestConfirmed(jovoInstance){
