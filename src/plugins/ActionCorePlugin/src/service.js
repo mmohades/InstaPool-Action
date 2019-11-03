@@ -91,6 +91,7 @@ class ActionCoreService{
         return jovoInstance.followUpState(state)
             .toIntent(intent);
     }
+
 }//end of DefaultVoice class
 
 module.exports.ActionCoreService = ActionCoreService;

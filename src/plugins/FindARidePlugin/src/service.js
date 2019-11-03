@@ -12,13 +12,15 @@ class FindARideService{
         if(!jovoInstance){
             return;
         }
+
         const location = extractLocationEntity(jovoInstance.$inputs);
         const date = extractDateEntity(jovoInstance.$inputs);
 
         if(debug) {
             console.log("Extracted location:");
             console.log(location);
-            console.log(`Expected: ${date.format('LLLL')}, now date: ${new Date(Date.now())}, UTC converted: ${moment.utc(date.valueOf())}, the differnece is ${(date.valueOf() - Date.now())}`)
+            console.log(`Expected: ${date.format('LLLL')}, now date: ${new Date(Date.now())},
+             UTC converted: ${moment.utc(date.valueOf())}, the differnece is ${(date.valueOf() - Date.now())}`)
         }
         if(location.type === "EMPTY"){
             return jovoInstance.ask(speech.locationNotFound, speech.locationNotFoundReprompt);
@@ -29,13 +31,20 @@ class FindARideService{
         }
 
         const newRideRequest = new RideRequest(date.utc(), null, location, false);
-
-        newRideRequest.save(jovoInstance.$user);
         const dateReadbleString = date.fromNow();
 
-        return jovoInstance
-            .followUpState("ConfirmRideRequestState")
-            .ask(parse(speech.confirmTimeAndLocation, location.data, dateReadbleString))
+        if (jovoInstance.$googleAction.isPermissionGranted()) {
+            if(device.location.formattedAddress){
+                rideRequest.source = device.location.formattedAddress;
+            }
+            return jovoInstance.followUpState("ConfirmRideRequestState")
+                .ask(parse(speech.confirmTimeAndLocation, location.data, dateReadbleString))
+        }
+
+        newRideRequest.save(jovoInstance.$user);
+
+        return jovoInstance.$googleAction.askForPreciseLocation("I need your precise location.")
+
     }
 
     async riderequestConfirmed(jovoInstance){
@@ -62,11 +71,47 @@ class FindARideService{
         if(drivers.length < 1){
             return jovoInstance.tell(speech.noDriversFound);
         }
-        if(drivers.length === 1){
-            return jovoInstance.tell(parse(speech.driverFound, drivers[0]));
+        if(drivers.length >= 1){
+            jovoInstance.$session.$data.driver = drivers[0];
+            return jovoInstance.followUpState("ConfirmDriverState").
+            ask(parse(speech.driverFound, drivers[0].name));
         }
 
-        return jovoInstance.tell(parse(speech.driversFound, drivers.length, drivers.join((', '))));
+        return jovoInstance.tell(parse(speech.driversFound, drivers.length, "Remove me from here"));
+
+    }
+    async findBusiness(jovoInstance, businessName, source) {
+        const coordinates =  jovoInstance.$app.$poolApiWrapperService.getLongLatByAddress(source);
+        //TODO: There is a problem with lat and lng attributes. either here or in the findByBusiness. check
+        //that out
+        return await jovoInstance.$app.$poolApiWrapperService.findBusinessByName(businessName, coordinates);
+    }
+    async askForPreciseLocation(jovoInstance){
+
+        const rideRequest = jovoInstance.$user.$data.rideRequests[0];
+        const dateReadbleString = moment(rideRequest.date).fromNow();
+
+        if (jovoInstance.$googleAction.isPermissionGranted()) {
+
+            if (jovoInstance.$googleAction.$user.hasPermission('DEVICE_PRECISE_LOCATION')) {
+                let device = jovoInstance.$googleAction.getDevice();
+                if(device.location.formattedAddress){
+                    rideRequest.source = device.location.formattedAddress;
+                }
+                if(rideRequest.destination.type === "BUSINESS") {
+                    const business = await this.findBusiness(jovoInstance, rideRequest.destination.data, rideRequest.source);
+
+                    const locationResponse = `${business.name} located at ${business.vicinity}`;
+                    return jovoInstance.followUpState("ConfirmRideRequestState")
+                        .ask(parse(speech.confirmTimeAndLocation, rideRequest.destination.data, dateReadbleString))
+                }
+                return jovoInstance.followUpState("ConfirmRideRequestState")
+                    .ask(parse(speech.confirmTimeAndLocation, rideRequest.destination.data, dateReadbleString))
+
+            }
+        }
+
+        return jovoInstance.tell('Alright, maybe next time');
 
     }
 }
