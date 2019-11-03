@@ -1,6 +1,31 @@
-moment = require('moment');
+const request = require('request-promise-native');
+const googleBaseApi = "https://maps.googleapis.com/maps/api/geocode/json?address=";
+const { googleApiKey } = require('../src/cred');
 
-parsed = moment("2019-11-03T13:25:00-04:00");
-parsed2 = moment("2019-11-03T01:41:26-04:00");
+    async function getLongLatByAddress(address){
+        const options = {
+            uri: googleBaseApi + address,
+            qs:{
+                key: googleApiKey
+            },
+            json: true
+        };
 
-console.log(parsed.format("LLLL"))//.isValid());
+        return request.get(options)
+            .then(function (parsedBody) {
+                if (parsedBody.status === "ZERO_RESULTS" ){
+                    return
+                }
+                let result = parsedBody.results[0];
+                return result.geometry.location;
+            })
+            .catch(reason => {
+                return {confirmation: false, reason: reason}
+            });
+    }
+
+result = getLongLatByAddress("5 gibson ct");
+
+result.then(res=> {
+    console.log(res)
+});

@@ -28,7 +28,7 @@ class FindARideService{
             return jovoInstance.ask(speech.dateIsNotValid, speech.dateIsNotValidReprompt);
         }
 
-        const newRideRequest = new RideRequest(date.utc(), null, location.data, false);
+        const newRideRequest = new RideRequest(date.utc(), null, location, false);
 
         newRideRequest.save(jovoInstance.$user);
         const dateReadbleString = date.fromNow();
@@ -50,8 +50,9 @@ class FindARideService{
             console.log("your ride request");
             console.log(rideRequest);
         }
+        //Updating server with the ride request
+        await jovoInstance.$app.$poolApiWrapperService.requestARide(rideRequest, jovoInstance.$user);
 
-        //TODO: Get the data from the DB and make calls to the API
         return jovoInstance.tell(speech.placedRideRequest);
     }
 }
