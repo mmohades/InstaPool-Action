@@ -1,6 +1,8 @@
+.DS_Store
 node_modules/
 db/
 src/cred.js
 bundle/
 bundle.zip
 .env
+.idea

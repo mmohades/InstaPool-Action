@@ -1,16 +1,19 @@
 {
   "name": "insta-pool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Voice App for InstaPool project at HackDuke",
   "main": "src/index.js",
   "dependencies": {
     "google-auth-library": "latest",
-    "jovo-db-filedb": "^2.0.2",
-    "jovo-db-mongodb": "^2.2.15",
-    "jovo-framework": "^2.2.19",
-    "jovo-platform-alexa": "^2.0.2",
-    "jovo-platform-googleassistant": "^2.0.2",
-    "jovo-plugin-debugger": "^2.0.2",
+    "jovo-cms-i18next": "^3.0.13",
+    "jovo-core": "^3.0.13",
+    "jovo-db-filedb": "^3.0.13",
+    "jovo-db-mongodb": "^3.0.13",
+    "jovo-framework": "^3.0.13",
+    "jovo-platform-alexa": "^3.0.13",
+    "jovo-platform-dialogflow": "^3.0.13",
+    "jovo-platform-googleassistant": "^3.0.13",
+    "jovo-plugin-debugger": "^3.0.13",
     "moment": "^2.24.0",
     "request-promise-native": "^1.0.7"
   },
@@ -19,7 +22,10 @@
     "gulp-install": "^1.1.0",
     "gulp-run-command": "0.0.9",
     "gulp-zip": "^4.2.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "lodash.template": ">=4.5.0",
+    "kind-of": ">=6.0.3",
+    "minimist": ">=1.2.3"
   },
   "scripts": {
     "tsc": "node -v",

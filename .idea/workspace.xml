@@ -1,110 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb770106-8c0a-4426-8d81-8e60b38f6361" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/handlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/handlers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/speech.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/speech.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/src/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/src/service.js" afterDir="false" />
-    </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="eb770106-8c0a-4426-8d81-8e60b38f6361" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugins/FindARidePlugin/src/service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="74" column="56" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugins/FindARidePlugin/src/handlers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="25" column="115" selection-start-line="25" selection-start-column="115" selection-end-line="25" selection-end-column="115" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/src/service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugins/FindARidePlugin/src/plugin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="21" column="81" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugins/FindARidePlugin/src/speech.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="17" column="119" selection-start-line="17" selection-start-column="119" selection-end-line="17" selection-end-column="119" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cred.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,162 +32,14 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>new RideRequest</find>
-      <find>$user</find>
-      <find>longitude</find>
-      <find>time</find>
-      <find>googleClientId</find>
-      <find>permission</find>
-      <find>addNewRide</find>
-      <find>permi</find>
-      <find>dateReadbleString</find>
-      <find>moment</find>
-      <find>googleBaseApi</find>
-      <find>address</find>
-      <find>add</find>
-      <find>this</find>
-      <find>findBusinessByName</find>
-      <find>riderequest</find>
-      <find>confirm</find>
-      <find>find</find>
-      <find>sourceLongLat</find>
-      <find>confirmTimeAndLocation</find>
-      <find>findbusiness</find>
-      <find>we'll</find>
-      <find>fi</find>
-      <find>status</find>
-      <find>.data</find>
-      <find>.$user</find>
-      <find>.$data</find>
-      <find>ride.</find>
-      <find>driver</find>
-      <find>drivers</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/plugins/index.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/plugins/AuthenticationPlugin/src/service.js" />
-        <option value="$PROJECT_DIR$/src/plugins/util.js" />
-        <option value="$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/speech.js" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/plugins/AuthenticationPlugin/src/plugin.js" />
-        <option value="$PROJECT_DIR$/src/plugins/AuthenticationPlugin/src/service.js" />
-        <option value="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/plugin.js" />
-        <option value="$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/plugin.js" />
-        <option value="$PROJECT_DIR$/src/plugins/FindARidePlugin/index.js" />
-        <option value="$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/index.js" />
-        <option value="$PROJECT_DIR$/src/plugins/index.js" />
-        <option value="$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/src/plugin.js" />
-        <option value="$PROJECT_DIR$/src/util.js" />
-        <option value="$PROJECT_DIR$/test/tst.js" />
-        <option value="$PROJECT_DIR$/models/RideRequest.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/app.js" />
-        <option value="$PROJECT_DIR$/src/cred.js" />
-        <option value="$PROJECT_DIR$/src/config.js" />
-        <option value="$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/service.js" />
-        <option value="$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/handlers.js" />
-        <option value="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/speech.js" />
-        <option value="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/service.js" />
-        <option value="$PROJECT_DIR$/src/plugins/FindARidePlugin/src/handlers.js" />
-        <option value="$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/src/service.js" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-16" />
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="978" />
-  </component>
+  <component name="ProjectId" id="1b3fbZLsE3T7hc0ueSkqg6lynfd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="ActionCorePlugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="ActionCorePlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="FindARidePlugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="FindARidePlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="PoolApiWrapperPlugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstaPoolAction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaPoolAction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="PoolApiWrapperPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -292,19 +63,7 @@
       <recent name="$PROJECT_DIR$/plugins" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Node.js.tst.js">
+  <component name="RunManager" selected="Node.js.service.js">
     <configuration name="service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="service.js" working-dir="$PROJECT_DIR$/src/plugins/FindARidePlugin/src">
       <method v="2" />
     </configuration>
@@ -313,8 +72,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.tst.js" />
         <item itemvalue="Node.js.service.js" />
+        <item itemvalue="Node.js.tst.js" />
       </list>
     </recent_temporary>
   </component>
@@ -329,275 +88,52 @@
       <option name="presentableId" value="Default" />
       <updated>1572718267433</updated>
       <workItem from="1572718270131" duration="771000" />
+      <workItem from="1587865772849" duration="5323000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42513000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-16" y="23" width="1680" height="978" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13261001" />
-      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="GraphQL" order="1" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3264368" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.32988507" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/AuthenticationPlugin/src/Models/AuthenticationException.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/AuthenticationPlugin/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/AuthenticationPlugin/src/Models/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/ActionCorePlugin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="14" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jovo-platform-googleassistant/dist/src/core/GoogleAction.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/AuthenticationPlugin/src/config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/speech.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" selection-start-column="2" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/plugin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="14" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/FindARidePlugin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/src/handlers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/src/speech.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/tst.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="4" selection-start-line="4" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/AuthenticationPlugin/src/plugin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/AuthenticationPlugin/src/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/RideRequest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/handlers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cred.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/src/plugin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/FindARidePlugin/src/plugin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/FindARidePlugin/src/speech.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="17" column="119" selection-start-line="17" selection-start-column="119" selection-end-line="17" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/ActionCorePlugin/src/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="81" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/FindARidePlugin/src/handlers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="25" column="115" selection-start-line="25" selection-start-column="115" selection-end-line="25" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/FindARidePlugin/src/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="74" column="56" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/PoolApiWrapperPlugin/src/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1850" height="271" key="GridCell.Tab.0.bottom" timestamp="1587866953310">
+      <screen x="49" y="23" width="1871" height="1057" />
+    </state>
+    <state width="1850" height="271" key="GridCell.Tab.0.bottom/49.23.1871.1057@49.23.1871.1057" timestamp="1587866953310" />
+    <state width="1850" height="271" key="GridCell.Tab.0.center" timestamp="1587866953309">
+      <screen x="49" y="23" width="1871" height="1057" />
+    </state>
+    <state width="1850" height="271" key="GridCell.Tab.0.center/49.23.1871.1057@49.23.1871.1057" timestamp="1587866953309" />
+    <state width="1850" height="271" key="GridCell.Tab.0.left" timestamp="1587866953309">
+      <screen x="49" y="23" width="1871" height="1057" />
+    </state>
+    <state width="1850" height="271" key="GridCell.Tab.0.left/49.23.1871.1057@49.23.1871.1057" timestamp="1587866953309" />
+    <state width="1850" height="271" key="GridCell.Tab.0.right" timestamp="1587866953310">
+      <screen x="49" y="23" width="1871" height="1057" />
+    </state>
+    <state width="1850" height="271" key="GridCell.Tab.0.right/49.23.1871.1057@49.23.1871.1057" timestamp="1587866953310" />
+    <state x="604" y="169" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587876157739">
+      <screen x="49" y="23" width="1871" height="1057" />
+    </state>
+    <state x="604" y="169" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/49.23.1871.1057@49.23.1871.1057" timestamp="1587876157739" />
+    <state x="690" y="148" width="588" height="807" key="find.popup" timestamp="1587877919117">
+      <screen x="49" y="23" width="1871" height="1057" />
+    </state>
+    <state x="690" y="148" width="588" height="807" key="find.popup/49.23.1871.1057@49.23.1871.1057" timestamp="1587877919117" />
+    <state x="649" y="256" key="run.anything.popup" timestamp="1587876928982">
+      <screen x="49" y="23" width="1871" height="1057" />
+    </state>
+    <state x="649" y="256" key="run.anything.popup/49.23.1871.1057@49.23.1871.1057" timestamp="1587876928982" />
   </component>
 </project>

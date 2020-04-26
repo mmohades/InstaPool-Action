@@ -14,15 +14,16 @@ function parse(str) {
  */
 function extractLocationEntity(inputs) {
     const location = inputs.location.value;
+
     let result = {"type": "EMPTY",
         "data": ""};
     if (location['street-address']){
         result.type = "STREET";
         result.data = location['street-address'];
     }
-    else if (location['business-name']){
+    else if (location){
         result.type = "BUSINESS";
-        result.data = location['business-name'];
+        result.data = location;
     }
 
     return result
@@ -35,9 +36,10 @@ function extractLocationEntity(inputs) {
  */
 function extractDateEntity(inputs) {
     date_time = inputs['date-time'];
-
-    if(date_time.value.date_time) {
-        return convert_string_to_date(inputs['date-time'].value.date_time);
+    console.log("Extrating time DEBUG")
+    console.log(date_time)
+    if(date_time.key.date_time) {
+        return convert_string_to_date(inputs['date-time'].key.date_time);
     }
     return convert_string_to_date(date_time.value);
 }
