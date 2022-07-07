@@ -14,7 +14,7 @@
     "jovo-platform-dialogflow": "^3.0.13",
     "jovo-platform-googleassistant": "^3.0.13",
     "jovo-plugin-debugger": "^3.0.13",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "request-promise-native": "^1.0.7"
   },
   "devDependencies": {
